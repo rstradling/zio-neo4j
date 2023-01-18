@@ -174,7 +174,7 @@ jobs:
 
   ci:
     runs-on: ubuntu-20.04
-    needs: [lint, compile, publishLocal, website, test, testJvms]
+    needs: [lint, compile, publishLocal, test, testJvms]
     steps:
       - name: Aggregate of lint, mdoc and all tests
         run: echo "ci passed"
